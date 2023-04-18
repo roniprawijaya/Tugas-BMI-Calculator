@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div>
+        <p class="brand">ronisme</p>
+        <p class="brand2">BMI calculator</p>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#111"
+        fill-opacity="1"
+        d="M0,192L40,192C80,192,160,192,240,197.3C320,203,400,213,480,186.7C560,160,640,96,720,106.7C800,117,880,203,960,218.7C1040,235,1120,181,1200,138.7C1280,96,1360,64,1400,48L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+    <div class="judul">
+      <h1>Check Your BMI</h1>
+      <br />
+      <h3>Enter your weight and height to check your BMI result</h3>
+    </div>
+    <div class="container-form">
+      <p>Put your weight in here (KG)</p>
+      <br />
+      <input
+        class="isi-form"
+        type="number"
+        id="berat"
+        placeholder="your weight"
+      /><br />
+      <p>And your Height in here (CM)</p>
+      <br />
+      <input
+        class="isi-form"
+        type="number"
+        id="tinggi"
+        placeholder="your Height"
+      /><br />
+      <br />
+    </div>
+    <button class="button" onclick="calculateBMI()">Calculate BMI</button>
+
+    <!-- ==========hasil============     -->
+    <div class="container-hasil">
+      <p class="hasil">Your BMI is <span id="bmi"></span></p>
+      <p class="hasil">which means You are <span id="status"></span></p>
+    </div>
+
+    <!-- ==========footer================ -->
+
+    <footer>
+      <div class="footer-content">
+        <h3>Roni Prawijaya</h3>
+        <p>
+          saya adalaha mahasiswa sekolah tinggi teknologi terpau nurul fikri
+          ,yang saat ini masih semester enam,pada sesester enak ini saya
+          mengikuti program skilvul
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.facebook.com/rais.akbar3110/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/raisakbar31"
+              ><i class="fa fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@RAISSUND"
+              ><i class="fa fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sikang_is/?hl=id"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy; <a href="#">@ronisme</a></p>
+      </div>
+    </footer>
+    <!-- ===============script=================== -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
